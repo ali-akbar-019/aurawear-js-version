@@ -1,0 +1,58 @@
+# Build artifacts
+dist/
+build/
+node_modules/
+*.egg-info/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+venv/
+env/
+ENV/
+*.pyc
+.pytest_cache/
+htmlcov/
+
+# Uploads and temp files
+uploads/
+temp/
+tmp/
+*.log
+
+# Archives
+*.zip
+aurawear_javascript_version.zip
+
+# OS files
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Sensitive files
+.pem
+*.pem
+private_key.*
+ai-clothing-*.json
