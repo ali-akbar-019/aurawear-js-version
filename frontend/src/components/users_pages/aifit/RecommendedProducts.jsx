@@ -34,18 +34,18 @@ export const RecommendedProducts = ({
                                         onMouseEnter={() => setIsHovered(true)}
                                         onMouseLeave={() => setIsHovered(false)}
                                     >
-                                        <div className="relative w-full aspect-[3/4] bg-muted overflow-hidden">
+                                        <div className="relative w-full aspect-3/4 bg-muted overflow-hidden">
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                                className="w-full h-full object-contain bg-muted transition-transform duration-700 ease-out group-hover:scale-105"
                                             />
                                             {isHovered && (
                                                 <div className="absolute inset-0 bg-black/10 backdrop-blur-sm transition-opacity duration-300" />
                                             )}
                                         </div>
 
-                                        <div className="p-4 flex flex-col flex-grow justify-between">
+                                        <div className="p-4 flex flex-col grow justify-between">
                                             <p className="text-xs uppercase tracking-widest font-light text-muted-foreground mb-1">
                                                 {product.occasion}
                                             </p>

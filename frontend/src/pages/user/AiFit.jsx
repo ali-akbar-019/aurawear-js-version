@@ -7,9 +7,9 @@ import { useState } from 'react';
 import { toast } from 'sonner';
 
 const dummyRecommendations = [
-    { id: 1, name: 'Slim Fit Shirt', image: '/banner_01.jpg', price: '$1499', occasion: 'Casual' },
-    { id: 2, name: 'Ethnic Kurta', image: '/banner_02.jpg', price: '$2499', occasion: 'Ethnic' },
-    { id: 3, name: 'Formal Blazer', image: '/placeholder_formal.jpg', price: '$3999', occasion: 'Formal' },
+    { id: 1, name: 'Slim Fit Shirt', image: '/banner_01.jpg', price: 'Rs. 1,499', occasion: 'Casual' },
+    { id: 2, name: 'Ethnic Kurta', image: '/banner_02.jpg', price: 'Rs. 2,499', occasion: 'Ethnic' },
+    { id: 3, name: 'Formal Blazer', image: '/placeholder_formal.jpg', price: 'Rs. 3,999', occasion: 'Formal' },
 ];
 
 const API_BASE = import.meta.env.VITE_API_BASE || '';
@@ -126,7 +126,7 @@ export default function AIFitsPage() {
                         p.images.find((img) => img.isPrimary)?.url ||
                         p.images[0]?.url ||
                         "",
-                    price: p.discountPrice ? `$${p.discountPrice}` : `$${p.basePrice}`,
+                    price: p.discountPrice ? `Rs. ${p.discountPrice}` : `Rs. ${p.basePrice}`,
                     occasion: p.occasion,
                 }))
             );

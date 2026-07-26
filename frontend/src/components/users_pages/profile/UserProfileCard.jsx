@@ -1,3 +1,5 @@
+import { Calendar, Mail, Shield, User } from "lucide-react";
+
 export const UserProfileCard = ({ userData }) => {
     return (
         <div className="mb-8 rounded-2xl border border-border bg-card p-6 md:p-8 shadow-sm hover:shadow-lg transition-shadow duration-200">

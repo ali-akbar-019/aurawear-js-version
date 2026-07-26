@@ -1,6 +1,7 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { useCart } from '@/contexts/CartContext';
 import { useWishlist } from '@/contexts/WishlistContext';
+import { formatCurrency } from '@/lib/currency.js';
 import { Heart, ShoppingCart, Star } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -90,7 +91,7 @@ export default function ProductCard({
     };
 
     return (
-        <Link to={`/products/${id}`}>
+        <Link to={`/shop/${id}`}>
             <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -119,8 +120,8 @@ export default function ProductCard({
                         onClick={handleWishlist}
                         disabled={wishlistLoading}
                         className={`absolute top-3 left-3 p-2 rounded-full transition-all ${wishlisted
-                                ? 'bg-red-500 text-white'
-                                : 'bg-white/80 text-gray-600 hover:bg-white'
+                            ? 'bg-red-500 text-white'
+                            : 'bg-white/80 text-gray-600 hover:bg-white'
                             }`}
                     >
                         <Heart className={`w-5 h-5 ${wishlisted ? 'fill-current' : ''}`} />
@@ -146,8 +147,8 @@ export default function ProductCard({
                                 <Star
                                     key={i}
                                     className={`w-4 h-4 ${i < Math.round(rating)
-                                            ? 'fill-yellow-400 text-yellow-400'
-                                            : 'text-gray-300'
+                                        ? 'fill-yellow-400 text-yellow-400'
+                                        : 'text-gray-300'
                                         }`}
                                 />
                             ))}
@@ -157,11 +158,11 @@ export default function ProductCard({
 
                     <div className="flex items-center gap-2">
                         <span className="text-lg font-bold text-gray-900">
-                            ${discountPrice ? discountPrice.toFixed(2) : price.toFixed(2)}
+                            {formatCurrency(discountPrice || price)}
                         </span>
                         {discountPrice && (
                             <span className="text-sm text-gray-500 line-through">
-                                ${price.toFixed(2)}
+                                {formatCurrency(price)}
                             </span>
                         )}
                     </div>

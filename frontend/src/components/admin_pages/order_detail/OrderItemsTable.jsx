@@ -41,10 +41,10 @@ const OrderItemsTable = ({ order }) => {
                                         <span className="text-slate-300">{item.color}</span>
                                     </div>
                                 </TableCell>
-                                <TableCell className="py-4 px-4 text-green-400 font-semibold">${item.price.toFixed(2)}</TableCell>
+                                <TableCell className="py-4 px-4 text-green-400 font-semibold">Rs. {item.price.toFixed(2)}</TableCell>
                                 <TableCell className="py-4 px-4 text-slate-300">{item.quantity}</TableCell>
                                 <TableCell className="py-4 px-4 text-right text-green-400 font-semibold">
-                                    ${(item.price * item.quantity).toFixed(2)}
+                                    Rs. {(item.price * item.quantity).toFixed(2)}
                                 </TableCell>
                             </TableRow>
                         ))}

@@ -57,7 +57,7 @@ export const CheckoutForm = ({
                         className="w-full h-12 text-base"
                     >
                         {loading && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
-                        Pay ${totalAmount.toFixed(2)}
+                        Pay Rs. {totalAmount.toFixed(2)}
                     </Button>
 
                     <p className="text-xs text-muted-foreground mt-3 text-center">

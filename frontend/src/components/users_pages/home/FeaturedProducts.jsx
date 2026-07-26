@@ -6,7 +6,7 @@ const products = [
     {
         id: 1,
         name: 'Essential White Linen Shirt',
-        price: '$89.00',
+        price: 'Rs. 8,900',
         rating: 4.8,
         reviews: 124,
         image: "/products/product_01.jpg"
@@ -14,7 +14,7 @@ const products = [
     {
         id: 2,
         name: 'Tailored Black Blazer',
-        price: '$249.00',
+        price: 'Rs. 24,900',
         rating: 4.9,
         reviews: 89,
         image: "/products/product_02.jpg"
@@ -22,7 +22,7 @@ const products = [
     {
         id: 3,
         name: 'Classic Denim Jeans',
-        price: '$129.00',
+        price: 'Rs. 12,900',
         rating: 4.7,
         reviews: 156,
         image: "/products/product_03.webp"
@@ -30,7 +30,7 @@ const products = [
     {
         id: 4,
         name: 'Minimalist Crew Neck Sweater',
-        price: '$119.00',
+        price: 'Rs. 11,900',
         rating: 4.8,
         reviews: 92,
         image: "/products/product_04.webp"

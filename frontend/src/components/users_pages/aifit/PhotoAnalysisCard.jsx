@@ -21,7 +21,7 @@ export const PhotoAnalysisCard = ({
                             <img
                                 src={URL.createObjectURL(uploadedImage)}
                                 alt="Uploaded"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain bg-background"
                             />
                         ) : (
                             <div className="text-center space-y-4">

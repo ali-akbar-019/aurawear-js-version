@@ -192,7 +192,7 @@ export default function ManageOrdersPage() {
                         <div className="flex items-center justify-between">
                             <div>
                                 <p className="text-slate-400 text-sm font-medium">Revenue</p>
-                                <p className="text-2xl font-bold text-green-400 mt-2">${totalRevenue.toFixed(2)}</p>
+                                <p className="text-2xl font-bold text-green-400 mt-2">Rs. {totalRevenue.toFixed(2)}</p>
                             </div>
                             <TrendingUp className="w-8 h-8 text-green-400/50" />
                         </div>

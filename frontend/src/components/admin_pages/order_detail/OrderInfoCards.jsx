@@ -30,7 +30,7 @@ const OrderInfoCards = ({
 
                     <div className="border-b border-slate-700 pb-4">
                         <p className="text-slate-400 text-sm font-medium">Total Amount</p>
-                        <p className="text-2xl font-bold text-green-400 mt-1">${order.totalAmount.toFixed(2)}</p>
+                        <p className="text-2xl font-bold text-green-400 mt-1">Rs. {order.totalAmount.toFixed(2)}</p>
                     </div>
 
                     <div className="border-b border-slate-700 pb-4">

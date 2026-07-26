@@ -62,7 +62,7 @@ const OrdersTable = ({
                                     </TableCell>
 
                                     <TableCell className="py-4 px-4">
-                                        <span className="text-green-400 font-semibold">${order.totalAmount.toFixed(2)}</span>
+                                        <span className="text-green-400 font-semibold">Rs. {order.totalAmount.toFixed(2)}</span>
                                     </TableCell>
 
                                     <TableCell className="py-4 px-4">

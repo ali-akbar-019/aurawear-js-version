@@ -33,7 +33,7 @@ const TopProductsStats = ({ products, allOrders, totalRevenue }) => {
                                         <div className="min-w-0">
                                             <p className="font-semibold text-white truncate">{p.name}</p>
                                             <p className="text-xs text-slate-400">
-                                                ${(p.discountPrice ?? p.basePrice).toLocaleString()}
+                                                Rs. {(p.discountPrice ?? p.basePrice).toLocaleString()}
                                             </p>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ const TopProductsStats = ({ products, allOrders, totalRevenue }) => {
                         <div className="p-3 bg-slate-700/50 rounded-lg">
                             <p className="text-xs text-slate-400 mb-1">Avg Order Value</p>
                             <p className="text-2xl font-bold text-white">
-                                ${allOrders && allOrders.length > 0 ? (totalRevenue / allOrders.length).toFixed(2) : 0}
+                                Rs. {allOrders && allOrders.length > 0 ? (totalRevenue / allOrders.length).toFixed(2) : 0}
                             </p>
                         </div>
                         <div className="p-3 bg-slate-700/50 rounded-lg">

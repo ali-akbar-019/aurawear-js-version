@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import { formatCurrency } from '@/lib/currency.js';
 
 const ProductPricing = ({ basePrice, discountPrice, stock }) => {
     const isOutOfStock = stock === 0;
@@ -7,11 +8,11 @@ const ProductPricing = ({ basePrice, discountPrice, stock }) => {
         <div className="flex flex-col gap-3">
             <div className="flex items-baseline gap-3">
                 <span className="text-3xl font-bold text-foreground">
-                    ₹{discountPrice || basePrice}
+                    {formatCurrency(discountPrice || basePrice)}
                 </span>
                 {discountPrice && (
                     <span className="text-xl text-muted-foreground line-through">
-                        ₹{basePrice}
+                        {formatCurrency(basePrice)}
                     </span>
                 )}
             </div>

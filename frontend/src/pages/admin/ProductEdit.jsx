@@ -150,7 +150,7 @@ export default function EditProductPage() {
     if (isLoading) return <Loading text="Loading product..." size="lg" />
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6">
+        <div className="min-h-screen bg-linear-to-b from-slate-950 via-slate-900 to-slate-950 p-6">
             <div className="max-w-5xl mx-auto space-y-8">
 
                 <div className="flex items-center gap-4">
@@ -277,7 +277,7 @@ export default function EditProductPage() {
                                 <h3 className="text-sm font-semibold text-slate-300 mb-4">Pricing</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     <div className="space-y-2">
-                                        <Label className="text-slate-300">Base Price ($)</Label>
+                                        <Label className="text-slate-300">Base Price (Rs)</Label>
                                         <Input
                                             type="number"
                                             value={product.basePrice}
@@ -286,7 +286,7 @@ export default function EditProductPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <Label className="text-slate-300">Discount Price ($)</Label>
+                                        <Label className="text-slate-300">Discount Price (Rs)</Label>
                                         <Input
                                             type="number"
                                             value={product.discountPrice}

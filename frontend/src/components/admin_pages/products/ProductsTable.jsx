@@ -48,10 +48,10 @@ const ProductsTable = ({
                                     </TableCell>
                                     <TableCell className="py-4 px-4">
                                         <div className="flex flex-col gap-1">
-                                            <span className="text-white font-semibold text-sm">${product.basePrice}</span>
+                                            <span className="text-white font-semibold text-sm">Rs. {product.basePrice}</span>
                                             {product.discountPrice && (
                                                 <span className="text-green-400 text-xs font-medium">
-                                                    -${(product.basePrice - product.discountPrice).toFixed(2)}
+                                                    -Rs. {(product.basePrice - product.discountPrice).toFixed(2)}
                                                 </span>
                                             )}
                                         </div>

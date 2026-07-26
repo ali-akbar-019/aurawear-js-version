@@ -77,7 +77,7 @@ const ProductImagesSection = ({
 
                             {img.url && (
                                 <div className="mt-3 rounded-lg overflow-hidden border border-slate-700">
-                                    <img src={img.url} alt={`Product ${idx + 1}`} className="w-full h-32 object-cover" />
+                                    <img src={img.url} alt={`Product ${idx + 1}`} className="w-full h-40 object-contain bg-slate-900" />
                                 </div>
                             )}
                         </div>

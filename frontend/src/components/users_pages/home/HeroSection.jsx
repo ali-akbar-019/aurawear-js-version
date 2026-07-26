@@ -56,7 +56,7 @@ export default function HeroSection() {
                             </div>
                             <div>
                                 <p className="text-lg font-semibold text-foreground">Free</p>
-                                <p className="text-xs text-muted-foreground">Shipping $500+</p>
+                                <p className="text-xs text-muted-foreground">Shipping Rs. 50,000+</p>
                             </div>
                         </div>
                     </div>

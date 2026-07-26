@@ -530,12 +530,12 @@ export default function ProductPage() {
                         <div className="bg-secondary/30 border border-border/40 rounded-2xl p-6 backdrop-blur-sm">
                             <div className="flex items-baseline gap-4 mb-3">
                                 <span className="text-4xl font-bold text-foreground">
-                                    ${product?.discountPrice || product?.basePrice}
+                                    Rs. {product?.discountPrice || product?.basePrice}
                                 </span>
                                 {product?.discountPrice && (
                                     <>
                                         <span className="text-lg text-muted-foreground line-through opacity-60">
-                                            ${product?.basePrice}
+                                            Rs. {product?.basePrice}
                                         </span>
                                         <span className="inline-block bg-red-500/10 text-red-600 text-sm font-semibold px-3 py-1 rounded-full border border-red-500/20">
                                             Save {discount}%

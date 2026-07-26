@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { formatCurrency } from '@/lib/currency.js';
 
 export const OrderSummary = ({
     cartItems,
@@ -26,7 +27,7 @@ export const OrderSummary = ({
                                 {item.variant.color} • {item.variant.size}
                             </p>
                             <p className="text-sm mt-1">
-                                ${(item.productId.discountPrice || item.productId.basePrice).toFixed(2)} × {item.quantity}
+                                {formatCurrency(item.productId.discountPrice || item.productId.basePrice)} × {item.quantity}
                             </p>
                         </div>
                     </div>
@@ -36,19 +37,19 @@ export const OrderSummary = ({
 
                 <div className="flex justify-between text-sm">
                     <span>Subtotal</span>
-                    <span>${subtotal.toFixed(2)}</span>
+                    <span>{formatCurrency(subtotal)}</span>
                 </div>
 
                 <div className="flex justify-between text-sm">
                     <span>Shipping</span>
-                    <span>${shippingCost.toFixed(2)}</span>
+                    <span>{formatCurrency(shippingCost)}</span>
                 </div>
 
                 <Separator />
 
                 <div className="flex justify-between font-semibold text-base">
                     <span>Total</span>
-                    <span>${totalAmount.toFixed(2)}</span>
+                    <span>{formatCurrency(totalAmount)}</span>
                 </div>
             </CardContent>
         </Card>

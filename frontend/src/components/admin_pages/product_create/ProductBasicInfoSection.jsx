@@ -127,7 +127,7 @@ const ProductBasicInfoSection = ({
                         <h3 className="text-sm font-semibold text-slate-300 mb-4">Pricing</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div className="space-y-2">
-                                <Label className="text-slate-300">Base Price ($)</Label>
+                                <Label className="text-slate-300">Base Price (Rs)</Label>
                                 <Input
                                     type="number"
                                     placeholder="0.00"
@@ -137,7 +137,7 @@ const ProductBasicInfoSection = ({
                                 />
                             </div>
                             <div className="space-y-2">
-                                <Label className="text-slate-300">Discount Price ($)</Label>
+                                <Label className="text-slate-300">Discount Price (Rs)</Label>
                                 <Input
                                     type="number"
                                     placeholder="0.00"
@@ -149,7 +149,7 @@ const ProductBasicInfoSection = ({
                             <div className="space-y-2">
                                 <Label className="text-slate-300">Savings</Label>
                                 <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-3 text-emerald-400 font-semibold">
-                                    ${Math.max(0, savings).toFixed(2)}
+                                    Rs. {Math.max(0, savings).toLocaleString()}
                                 </div>
                             </div>
                         </div>

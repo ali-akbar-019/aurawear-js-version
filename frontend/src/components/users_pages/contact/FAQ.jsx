@@ -12,7 +12,7 @@ const faqs = [
         id: 2,
         question: 'How long does shipping take?',
         answer:
-            'Standard shipping takes 5-7 business days. Express shipping is available for 2-3 business day delivery. Orders over $50 qualify for free standard shipping.',
+            'Standard shipping takes 5-7 business days. Express shipping is available for 2-3 business day delivery. Orders over Rs. 5,000 qualify for free standard shipping.',
     },
     {
         id: 3,

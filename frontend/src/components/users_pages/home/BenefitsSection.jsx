@@ -5,7 +5,7 @@ const benefits = [
         id: 1,
         icon: Truck,
         title: 'Free Shipping',
-        description: 'Complimentary shipping on orders above $100 worldwide.',
+        description: 'Complimentary shipping on orders above Rs. 10,000 worldwide.',
     },
     {
         id: 2,

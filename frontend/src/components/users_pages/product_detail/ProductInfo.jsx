@@ -1,4 +1,5 @@
 import { Check, Heart, Share2, ShoppingCart, X } from "lucide-react";
+import { formatCurrency } from '@/lib/currency.js';
 
 const colorMap = {
     "Navy Blue": "bg-blue-900",
@@ -93,11 +94,11 @@ export default function ProductInfo(props) {
 
             <div className="flex items-baseline gap-3">
                 <span className="text-3xl font-bold text-foreground">
-                    ₹{product.discountPrice || product.basePrice}
+                    {formatCurrency(product.discountPrice || product.basePrice)}
                 </span>
                 {product.discountPrice && (
                     <span className="text-xl text-muted-foreground line-through">
-                        ₹{product.basePrice}
+                        {formatCurrency(product.basePrice)}
                     </span>
                 )}
             </div>

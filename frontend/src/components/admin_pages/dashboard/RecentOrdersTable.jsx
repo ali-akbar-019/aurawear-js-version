@@ -35,7 +35,7 @@ const RecentOrdersTable = ({ allOrders, users }) => {
                                     <tr key={o._id} className="border-b border-slate-700/50 hover:bg-slate-700/30 transition-colors">
                                         <td className="px-4 py-3 text-slate-300 font-mono text-xs">{o._id.slice(0, 8)}...</td>
                                         <td className="px-4 py-3 text-slate-200">{userName}</td>
-                                        <td className="px-4 py-3 text-slate-200 font-semibold">${o.totalAmount.toLocaleString()}</td>
+                                        <td className="px-4 py-3 text-slate-200 font-semibold">Rs. {o.totalAmount.toLocaleString()}</td>
                                         <td className="px-4 py-3">
                                             <span className={`px-2 py-1 rounded-full text-xs font-medium ${statusColor}`}>
                                                 {o.orderStatus}

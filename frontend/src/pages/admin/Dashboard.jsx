@@ -85,7 +85,7 @@ const Dashboard = () => {
 
                     <DashboardCard
                         title="Revenue"
-                        value={`$${totalRevenue.toLocaleString()}`}
+                        value={`Rs. ${totalRevenue.toLocaleString()}`}
                         icon={LucideDollarSign}
                         iconBg="bg-amber-500/20"
                         iconColor="text-amber-400"
@@ -112,7 +112,7 @@ const Dashboard = () => {
                         type="line"
                         data={salesData}
                         dataKeys={['orders', 'revenue']}
-                        lineNames={['Orders', 'Revenue ($)']}
+                        lineNames={['Orders', 'Revenue (Rs)']}
                         lineColors={['#3b82f6', '#10b981']}
                         height={300}
                         colSpan={2}

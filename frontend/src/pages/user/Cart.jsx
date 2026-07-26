@@ -121,7 +121,7 @@ export default function CartPage() {
                                                 Size: {item.variant.size} | Color: {item.variant.color}
                                             </p>
                                             <p className="text-foreground font-semibold mt-2">
-                                                ${(item.productId.discountPrice || item.productId.basePrice).toLocaleString()}
+                                                Rs. {(item.productId.discountPrice || item.productId.basePrice).toLocaleString()}
                                             </p>
                                         </div>
 
@@ -162,15 +162,15 @@ export default function CartPage() {
 
                             <div className="flex justify-between text-muted-foreground">
                                 <span>Subtotal</span>
-                                <span>${subtotal.toLocaleString()}</span>
+                                <span>Rs. {subtotal.toLocaleString()}</span>
                             </div>
                             <div className="flex justify-between text-muted-foreground">
                                 <span>Shipping</span>
-                                <span>${shipping.toLocaleString()}</span>
+                                <span>Rs. {shipping.toLocaleString()}</span>
                             </div>
                             <div className="flex justify-between font-semibold text-foreground text-lg border-t border-border pt-2">
                                 <span>Total</span>
-                                <span>${total.toLocaleString()}</span>
+                                <span>Rs. {total.toLocaleString()}</span>
                             </div>
 
                             <Link to="/checkout">

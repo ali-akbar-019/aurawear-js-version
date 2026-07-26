@@ -16,10 +16,10 @@ const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '28', '30', '32', '34', '36', '
 const TARGET_GROUPS = ['Men', 'Women', 'Unisex'];
 const PRICE_RANGES = [
     { label: 'All Prices', min: 0, max: Infinity },
-    { label: 'Under $5,000', min: 0, max: 5000 },
-    { label: '$5,000 - $10,000', min: 5000, max: 10000 },
-    { label: '$10,000 - $20,000', min: 10000, max: 20000 },
-    { label: 'Above $20,000', min: 20000, max: Infinity }
+    { label: 'Under Rs. 5,000', min: 0, max: 5000 },
+    { label: 'Rs. 5,000 - Rs. 10,000', min: 5000, max: 10000 },
+    { label: 'Rs. 10,000 - Rs. 20,000', min: 10000, max: 20000 },
+    { label: 'Above Rs. 20,000', min: 20000, max: Infinity }
 ];
 const RATINGS = [5, 4, 3, 2, 1];
 
